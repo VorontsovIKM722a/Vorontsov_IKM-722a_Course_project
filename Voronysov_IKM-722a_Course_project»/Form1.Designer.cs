@@ -58,7 +58,7 @@
             // tbInput
             // 
             this.tbInput.Enabled = false;
-            this.tbInput.Location = new System.Drawing.Point(362, 190);
+            this.tbInput.Location = new System.Drawing.Point(362, 199);
             this.tbInput.Name = "tbInput";
             this.tbInput.Size = new System.Drawing.Size(100, 22);
             this.tbInput.TabIndex = 2;
