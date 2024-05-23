@@ -53,7 +53,7 @@
             this.bStart.TabIndex = 1;
             this.bStart.Text = "Пуск";
             this.bStart.UseVisualStyleBackColor = true;
-            this.bStart.Click += new System.EventHandler(this.button1_Click);
+            this.bStart.Click += new System.EventHandler(this.bStart_Click);
             // 
             // tbInput
             // 
