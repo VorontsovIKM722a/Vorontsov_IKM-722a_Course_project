@@ -7,7 +7,7 @@ using System.IO;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Windows.Forms;
 using System.Diagnostics;
-
+using System.Collections;
 namespace Voronysov_IKM_722a_Course_project_
 {
     internal class MajorWork
@@ -18,6 +18,12 @@ namespace Voronysov_IKM_722a_Course_project_
         private string Result; // Поле результату
         public bool Modify;
         private int Key;// поле ключа
+
+        public Stack myStack = new Stack();
+        public string[] myArr = new string[100];
+
+        public Queue myQueue = new Queue();
+        public string[] smyQueue = new string[100];
 
         // Методи
         private string SaveFileName;// ім’я файлу для запису
