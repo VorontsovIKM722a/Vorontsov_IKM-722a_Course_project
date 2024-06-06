@@ -67,18 +67,28 @@ namespace Voronysov_IKM_722a_Course_project_
         {
             return this.Result;// метод відображення результату
         }
-        public void Task() // метод реалізації програмного завдання
+        public void Task()
         {
-            if (this.Data.Length > 5)
-            {
-                this.Result = Convert.ToString(true);
+            
+            
+                string[] dataParts = Data.Split(new char[] { ',', ' ' }, StringSplitOptions.RemoveEmptyEntries);
 
-            }
-            else
-            {
-                this.Result = Convert.ToString(false);
-            }
-            this.Modify = true; // Дозвіл запису
+                int sum = 0;
+
+
+                int[] NData = new int[dataParts.Length];
+                for (int i = 0; i < dataParts.Length; i++)
+                {
+                    NData[i] = int.Parse(dataParts[i]);
+                }
+
+
+                for (int i = 0; i < dataParts.Length; i += 2)
+                {
+                    sum += NData[i];
+                }
+                this.Result = "Cума кожного непарного елементу :" + sum.ToString();
+                this.Modify = true;
         }
         public void SaveToFile() // Запис даних до файлу
         {

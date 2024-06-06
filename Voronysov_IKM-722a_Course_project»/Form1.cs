@@ -98,7 +98,7 @@ namespace Voronysov_IKM_722a_Course_project_
         {
             tClock.Stop();
             tClock.Start();
-            if ((e.KeyChar >= '0') & (e.KeyChar <= '9') | (e.KeyChar == (char)8))
+            if ((e.KeyChar >= '0') & (e.KeyChar <= '9') | (e.KeyChar == (char)8) | (e.KeyChar == ' '))
             {
                 return;
             }
